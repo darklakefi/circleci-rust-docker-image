@@ -1,0 +1,10 @@
+version: 2.1
+
+orbs:
+  shell: circleci/shellcheck@3.1.1
+
+workflows:
+  lint-scripts:
+    jobs:
+      - shell/check:
+          exclude: "SC1091,SC2128,SC2145,SC2154"
