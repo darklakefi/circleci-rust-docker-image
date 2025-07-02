@@ -15,8 +15,8 @@ chmod +x ./build-images.sh
 echo "" >> ./build-images.sh
 
 if [[ $arm64 == "1" ]]; then
-	echo "docker context create cimg"  >> ./build-images.sh
-	echo "docker buildx create --use cimg"  >> ./build-images.sh
+	echo "docker context create darklakefi"  >> ./build-images.sh
+	echo "docker buildx create --use darklakefi"  >> ./build-images.sh
 fi
 
 touch push-images-temp.sh

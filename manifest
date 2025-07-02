@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-repository=rust
+repository=circleci-rust
 parent=base
 variants=(node browsers)
-namespace=cimg
+namespace=darklakefi
 arm64=1
